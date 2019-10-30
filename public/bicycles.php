@@ -28,6 +28,8 @@
 
 <?php
 
+include('/private/classes/parsecsv.class.php');
+
 $parser = new ParseCSV(PRIVATE_PATH . '/used_bicycles.csv');
 $bike_array = $parser->parse();
 
